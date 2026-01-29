@@ -2,6 +2,7 @@ import React from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { Button } from './ui/button';
 import heroBackground from 'figma:asset/f05753469b60fb5c0cdd9d430c02abf2cd522514.png';
+import { partners } from '../config/partners';
 
 interface HeroSectionProps {
   onJoinClick: () => void;
@@ -10,6 +11,7 @@ interface HeroSectionProps {
 
 export function HeroSection({ onJoinClick, onHowItWorksClick }: HeroSectionProps) {
   const { t } = useLanguage();
+  const logos = partners.map(p => p[t.language] ?? p.en);
 
   return (
     <section className="py-16 px-4 md:py-24 md:pl-12 lg:pl-16">
@@ -46,6 +48,28 @@ export function HeroSection({ onJoinClick, onHowItWorksClick }: HeroSectionProps
                 className="bg-black text-white hover:bg-black/80 px-10 py-7 rounded-full text-[16px]">
                 {t.heroCtaPrimary}
               </Button>
+            </div>
+            <div className="mt-8 flex flex-col items-start md:items-start gap-4">
+              <p className="text-[16px] text-[#1d1d1f]">
+                {t.partnersText}
+              </p>
+
+              <div className="flex items-center gap-8 flex-wrap">
+                {logos.map((src, i) => (
+                  <div
+                    key={i}
+                    style={{ height: 100 }}
+                    className="h-[100px] shrink-0 flex items-center justify-center"
+                  >
+                    <img
+                      src={src}
+                      style={{ height: 100 }}
+                      alt=""
+                      className="h-full w-auto object-contain"
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
             
             <p className="text-[13px] text-[#1d1d1f] mt-4">
