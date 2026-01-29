@@ -45,7 +45,7 @@ export function HeroSection({ onJoinClick, onHowItWorksClick }: HeroSectionProps
             <div className="flex items-center justify-center md:justify-start gap-4 flex-wrap">
               <Button
                 onClick={onJoinClick}
-                className="bg-black text-white hover:bg-black/80 px-10 py-7 rounded-full text-[16px]">
+                className="bg-black text-white hover:bg-black/80 px-10 py-7 rounded-full text-[14px]">
                 {t.heroCtaPrimary}
               </Button>
             </div>
