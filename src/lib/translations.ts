@@ -10,7 +10,7 @@ export const translations = {
     heroHeadline: 'Vaheta ekraaniaeg preemiate vastu',
     partnersText: 'Ideed toetab:',
     heroSubheadline: 'Kas haarad liiga tihti ekraani järele? Trehvá on rakendus, mis premeerib sind ekraanivabalt veedetud aja eest väljaspool kodu. Preemiapunkte saad vahetada tasuta kohvi, piletite ja soodustuste vastu.',
-    heroCtaPrimary: 'Kõnetab, tahan olla esimeste seas',
+    heroCtaPrimary: 'Esimesed huvilised saavad 100 krediiti',
     heroCtaDisclaimer: 'Aita meil ideed valideerida. Lahendus tuleb tasuta ja sinu huvi aitab seda edasi arendada.',
     heroCtaSecondary: 'Paku oma teenust',
     
@@ -155,7 +155,7 @@ export const translations = {
     heroHeadline: 'Trade screen time for real rewards',
     partnersText: 'The idea is supported:',
     heroSubheadline: 'Do you reach for your screen too often? Trehva is an app that rewards you for screen-free time spent outside your home. You can exchange reward points for free coffee, tickets, and discounts.',
-    heroCtaPrimary: 'Join waitlist',
+    heroCtaPrimary: 'Join waitlist and get 100 credits',
     heroCtaDisclaimer: 'Help us validate the idea. The solution is not yet available, your interest helps us build further. The solution would be free for users.',
     heroCtaSecondary: 'Offer your service',
     
